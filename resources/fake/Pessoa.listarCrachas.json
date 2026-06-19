@@ -1,0 +1,32 @@
+[
+  {
+    "codfusclgund": "00",
+    "codcra": "000000000000",
+    "tipvinaux": "ALUNOGR",
+    "codoriclgund": "11",
+    "codpescra": "00000000",
+    "nompescra": "Nome Fake para Teste",
+    "numviacra": "22",
+    "codepr": "000",
+    "sitpescra": "A",
+    "nomorg": "UNIDADE_TESTE",
+    "dtaultalt": "1000-00-00 00:00:00",
+    "numserchi": "1111111111",
+    "codctgctousp": "333",
+    "tipvin": "ALUNOGR",
+    "nomvin": "Aluno de Graduação",
+    "idclocctiusp": "C",
+    "timestamp": "44444444",
+    "nomtabvin": "ALUNOGR",
+    "ordhie": "55",
+    "przvalctiusp": "66",
+    "nomsisori": "SistemaFake",
+    "dtadtvtipvin": "",
+    "tipvinabv": "agr",
+    "dtacad": "",
+    "tipvinofc": "",
+    "stalgiunc": "S",
+    "dtllgiunc": "Após a conclusão do curso, se torna automaticamente ALUMNI, sendo considerado ativo (sitatl='A') se estiver cadastrado no Portal Alumni. Caso contrário, fica com a situação 'D'.",
+    "obstipvin": ""
+  }
+]
