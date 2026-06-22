@@ -1,16 +1,15 @@
 {
-  "codfusclgund": 11,
-  "codcra": "TESTE123456",
+  "codfusclgund": 27,
+  "codcra": "GRAD202600184",
   "tipvinaux": "ALUNOGR",
-  "codoriclgund": 11,
-  "codpescra": "00000000",
-  "nompescra": "NOME FAKE",
-  "numviacra": 1,
-  "codepr": "999",
+  "codoriclgund": 27,
+  "codpescra": "12345678",
+  "nompescra": "Beatriz Carvalho Souza",
+  "numviacra": 2,
+  "codepr": "145",
   "sitpescra": "A",
-  "nomorg": "UNIDADE_TESTE",
-  "dtaultalt": "1000-01-01 00:00:00",
-  "numserchi": "0000000000",
-  "codctgctousp": 111
+  "nomorg": "Instituto de Ciências Aplicadas",
+  "dtaultalt": "2025-11-18 09:42:00",
+  "numserchi": "A9F3K2L8M1",
+  "codctgctousp": 204
 }
-
