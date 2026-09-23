@@ -836,7 +836,8 @@ class Graduacao extends ReplicadoBase
     {
         $query = "SELECT DISTINCT
                     H.codhab,
-                    LTRIM(RTRIM(H.nomhab)) AS nomhab
+                    LTRIM(RTRIM(H.nomhab)) AS nomhab,
+                    H.perhab AS periodo
                 FROM CURSOGR C
                 INNER JOIN HABILITACAOGR H
                     ON C.codcur = H.codcur
