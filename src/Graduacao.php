@@ -822,6 +822,39 @@ class Graduacao extends ReplicadoBase
         return DB::fetchAll($query);
     }
 
+    /**
+     * Lista as habilitações da letras
+     *
+     * Somente os já encerrados dentro da unidade
+     *
+     * @param Integer
+     * @return Bool
+     *
+     * @author Camila Moraes de Lima, em 23/09/2026
+     */
+    protected static function _listarHabilitacoesLetras($codundclg)
+    {
+        $query = "SELECT DISTINCT
+                    H.codhab,
+                    LTRIM(RTRIM(H.nomhab)) AS nomhab
+                FROM CURSOGR C
+                INNER JOIN HABILITACAOGR H
+                    ON C.codcur = H.codcur
+                WHERE C.codclg = CONVERT(int, :codundclg)
+                    AND C.dtadtvcur IS NULL
+                    AND H.dtadtvhab IS NULL
+                    AND H.codhab IS NOT NULL
+                    AND H.nomhab IS NOT NULL
+                    AND LTRIM(RTRIM(H.nomhab)) <> ''
+                ORDER BY H.nomhab ASC";
+
+        $param = [
+            'codundclg' => $codundclg,
+        ];
+
+        return DB::fetchAll($query, $param);
+    }
+
     /********** INÍCIO - Métodos deprecados que devem ser eliminados numa futura major release ***********/
 
     /**
