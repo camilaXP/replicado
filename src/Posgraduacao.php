@@ -964,4 +964,20 @@ class Posgraduacao extends ReplicadoBase
 
         return DB::fetchAll($query);
     }
+    
+    /**
+     * Método para obter os dados do programa de Pós-Graduação de um aluno ativo.
+     *
+     * @param int $codpes
+     * @return array|bool
+     *
+     * @author Camila Moraes 25/09/2026
+     */
+    public static function _getAlunoPos(int $codpes)
+    {
+        $query = DB::getQuery('Posgraduacao.getAlunoPos.sql');
+        $param = ['codpes' => $codpes];
+
+        return DB::fetch($query, $param);
+    }
 }
