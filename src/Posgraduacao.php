@@ -980,4 +980,21 @@ class Posgraduacao extends ReplicadoBase
 
         return DB::fetch($query, $param);
     }
+
+    /**
+     * Método para obter nome da área.
+     *
+     * @param int $codare
+     * @return array|bool
+     *
+     * @author Camila Moraes 25/09/2026
+     */
+    public static function _obterNomeArea(int $codare)
+    {
+        $query = DB::getQuery('Posgraduacao.obterNomeArea.sql');
+        $param = ['codare' => $codare];
+
+        return DB::fetch($query, $param);
+    }
+
 }
